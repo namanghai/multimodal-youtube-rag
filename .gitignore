@@ -1,0 +1,12 @@
+# Python / Virtual Environments
+venv/
+__pycache__/
+*.pyc
+.env
+.venv/
+
+# Project Specific Data & Caches (DO NOT COMMIT THESE)
+backend/data/faiss_indices/
+backend/data/frames/
+*.faiss
+*.pkl
