@@ -1,12 +1,28 @@
-# Python / Virtual Environments
+# Python virtual environments
+.venv/
 venv/
+env/
+
+# Environment variables — copy .env.example → .env, never commit .env
+.env
+
+# Python cache
 __pycache__/
 *.pyc
-.env
-.venv/
+*.pyo
+*.pyd
 
-# Project Specific Data & Caches (DO NOT COMMIT THESE)
+# Project generated data (FAISS indices and extracted frames)
 backend/data/faiss_indices/
 backend/data/frames/
 *.faiss
 *.pkl
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
